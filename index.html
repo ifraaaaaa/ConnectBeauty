@@ -13,7 +13,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:'Arial',sans-serif;
 }
 
 body{
@@ -35,18 +35,19 @@ nav a{
 color:#ff4f97;
 text-decoration:none;
 font-weight:bold;
-margin:0 10px;
+margin:0 8px;
 }
 
+
 header{
-background:linear-gradient(135deg,#ff8fc4,#ff5fa2);
+background:linear-gradient(135deg,#ff9dcc,#ff5fa2);
 color:white;
-padding:70px 20px;
+padding:75px 20px;
 text-align:center;
 }
 
 header h1{
-font-size:50px;
+font-size:52px;
 margin-bottom:15px;
 }
 
@@ -54,22 +55,25 @@ header p{
 font-size:20px;
 }
 
+
 .hero-button{
 display:inline-block;
 margin-top:25px;
 padding:15px 35px;
 background:white;
 color:#ff5fa2;
-text-decoration:none;
 border-radius:40px;
+text-decoration:none;
 font-weight:bold;
 }
 
+
 section{
 padding:60px 20px;
-max-width:1100px;
+max-width:1150px;
 margin:auto;
 }
+
 
 h2{
 text-align:center;
@@ -78,49 +82,68 @@ color:#ff4f97;
 font-size:36px;
 }
 
+
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
 gap:25px;
 }
 
+
 .card{
 background:white;
 padding:25px;
 border-radius:25px;
 box-shadow:0 10px 25px rgba(0,0,0,.08);
-transition:.25s;
+transition:.3s;
 }
 
+
 .card:hover{
-transform:translateY(-6px);
+transform:translateY(-7px);
 }
+
 
 .card h3{
 color:#ff4f97;
 margin-bottom:10px;
 }
 
+
+.product-image{
+height:170px;
+background:#ffe4f0;
+border-radius:20px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:55px;
+margin-bottom:20px;
+}
+
+
 .rating{
 font-size:20px;
-margin:10px 0;
+margin:12px 0;
 }
+
 
 .tag{
 color:#ff5fa2;
 font-weight:bold;
 }
 
-.product-image{
-height:150px;
+
+.badge{
+display:inline-block;
 background:#ffe0ee;
+color:#ff4f97;
+padding:6px 12px;
 border-radius:20px;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:50px;
-margin-bottom:20px;
+font-size:13px;
+margin-bottom:10px;
 }
+
 
 footer{
 text-align:center;
@@ -130,27 +153,31 @@ color:white;
 margin-top:50px;
 }
 
+
 </style>
 
 </head>
 
 <body>
 
+
 <nav>
 <a href="#products">Products</a>
-<a href="#categories">Categories</a>
+<a href="#skincare">Skincare</a>
+<a href="#makeup">Makeup</a>
 <a href="#tips">Tips</a>
 <a href="#about">About</a>
 </nav>
+
 
 <header>
 
 <h1>💖 ConnectBeauty 💖</h1>
 
-<p>Your guide to trending makeup, skincare and beauty favourites.</p>
+<p>Discover trending makeup, skincare and beauty favourites.</p>
 
 <a class="hero-button" href="#products">
-Explore Products
+Explore Beauty
 </a>
 
 </header>
@@ -158,7 +185,8 @@ Explore Products
 
 <section id="products">
 
-<h2>✨ Featured Beauty Products ✨</h2>
+<h2>✨ Trending Beauty Products ✨</h2>
+
 
 <div class="grid">
 
@@ -169,19 +197,17 @@ Explore Products
 💄
 </div>
 
+<span class="badge">Popular Makeup</span>
+
 <h3>e.l.f. Power Grip Primer</h3>
 
 <div class="rating">
 ⭐⭐⭐⭐⭐
 </div>
 
-<p><span class="tag">Category:</span> Makeup</p>
+<p><b>What it does:</b> Creates a smooth base and helps makeup last longer.</p>
 
-<p>
-A popular primer that helps makeup stay in place while creating a smooth and glowy base.
-</p>
-
-<p><b>Best for:</b> Long-lasting makeup looks.</p>
+<p><b>Why people love it:</b> Lightweight, affordable and gives a fresh finish.</p>
 
 </div>
 
@@ -192,19 +218,17 @@ A popular primer that helps makeup stay in place while creating a smooth and glo
 👁️
 </div>
 
+<span class="badge">Bestseller</span>
+
 <h3>Maybelline Sky High Mascara</h3>
 
 <div class="rating">
 ⭐⭐⭐⭐⭐
 </div>
 
-<p><span class="tag">Category:</span> Makeup</p>
+<p><b>What it does:</b> Adds length and definition to lashes.</p>
 
-<p>
-A lightweight mascara loved for creating longer-looking lashes.
-</p>
-
-<p><b>Best for:</b> Everyday and glam looks.</p>
+<p><b>Why people love it:</b> Easy for everyday makeup looks.</p>
 
 </div>
 
@@ -215,19 +239,17 @@ A lightweight mascara loved for creating longer-looking lashes.
 💋
 </div>
 
+<span class="badge">Trending</span>
+
 <h3>Rhode Peptide Lip Treatment</h3>
 
 <div class="rating">
 ⭐⭐⭐⭐⭐
 </div>
 
-<p><span class="tag">Category:</span> Lip Care</p>
+<p><b>What it does:</b> Gives lips a glossy and hydrated look.</p>
 
-<p>
-A glossy lip treatment designed to leave lips feeling soft and hydrated.
-</p>
-
-<p><b>Best for:</b> A simple glossy lip.</p>
+<p><b>Why people love it:</b> Simple, cute and perfect for daily use.</p>
 
 </div>
 <div class="card">
@@ -236,19 +258,59 @@ A glossy lip treatment designed to leave lips feeling soft and hydrated.
 🧴
 </div>
 
+<span class="badge">Skincare Favourite</span>
+
 <h3>Laneige Lip Sleeping Mask</h3>
 
 <div class="rating">
 ⭐⭐⭐⭐⭐
 </div>
 
-<p><span class="tag">Category:</span> Skincare</p>
+<p><b>What it does:</b> Helps lips feel soft and smooth overnight.</p>
 
-<p>
-A popular overnight lip mask that helps lips feel soft and smooth.
-</p>
+<p><b>Why people love it:</b> A relaxing self-care step before bed.</p>
 
-<p><b>Best for:</b> Night-time self-care routines.</p>
+</div>
+
+
+<div class="card">
+
+<div class="product-image">
+🌸
+</div>
+
+<span class="badge">Blush Favourite</span>
+
+<h3>Rare Beauty Soft Pinch Blush</h3>
+
+<div class="rating">
+⭐⭐⭐⭐⭐
+</div>
+
+<p><b>What it does:</b> Adds colour and a fresh glow to cheeks.</p>
+
+<p><b>Why people love it:</b> A little product goes a long way.</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="product-image">
+✨
+</div>
+
+<span class="badge">Glow Product</span>
+
+<h3>Charlotte Tilbury Flawless Filter</h3>
+
+<div class="rating">
+⭐⭐⭐⭐⭐
+</div>
+
+<p><b>What it does:</b> Creates a glowing, smooth-looking finish.</p>
+
+<p><b>Why people love it:</b> Gives makeup a soft glow.</p>
 
 </div>
 
@@ -259,31 +321,9 @@ A popular overnight lip mask that helps lips feel soft and smooth.
 
 
 
-<section id="about">
+<section id="makeup">
 
-<h2>About ConnectBeauty 💄</h2>
-
-<p style="text-align:center;font-size:18px;max-width:750px;margin:auto;">
-
-ConnectBeauty is a beauty discovery website created to help you find popular makeup, skincare and beauty favourites.
-
-<br><br>
-
-We share product information, ratings, beauty tips and guides to make choosing beauty products easier.
-
-<br><br>
-
-Our goal is to connect beauty lovers with products they will enjoy while making beauty simple, fun and inspiring!
-
-</p>
-
-</section>
-
-
-
-<section id="categories">
-
-<h2>Beauty Categories 🌸</h2>
+<h2>💄 Makeup Must-Haves</h2>
 
 
 <div class="grid">
@@ -291,10 +331,18 @@ Our goal is to connect beauty lovers with products they will enjoy while making 
 
 <div class="card">
 
-<h3>💄 Makeup</h3>
+<div class="product-image">
+💗
+</div>
+
+<h3>Makeup Base</h3>
 
 <p>
-Explore primers, foundations, blushes, mascaras, lip products and more.
+A good base can help your makeup look smoother and last longer.
+</p>
+
+<p>
+Popular items include primers, foundations and concealers.
 </p>
 
 </div>
@@ -302,10 +350,18 @@ Explore primers, foundations, blushes, mascaras, lip products and more.
 
 <div class="card">
 
-<h3>🧴 Skincare</h3>
+<div class="product-image">
+🎀
+</div>
+
+<h3>Lips</h3>
 
 <p>
-Discover cleansers, moisturisers, serums and skincare routines.
+Lip products can change your whole makeup look.
+</p>
+
+<p>
+Explore glosses, lip balms, liners and treatments.
 </p>
 
 </div>
@@ -313,21 +369,14 @@ Discover cleansers, moisturisers, serums and skincare routines.
 
 <div class="card">
 
-<h3>💇 Haircare</h3>
-
-<p>
-Find products and tips for healthy, shiny hair.
-</p>
-
+<div class="product-image">
+⭐
 </div>
 
-
-<div class="card">
-
-<h3>🌷 Fragrance</h3>
+<h3>Finishing Touches</h3>
 
 <p>
-Explore popular perfumes and find your perfect scent style.
+Mascara, blush and highlighter add the final details to a look.
 </p>
 
 </div>
@@ -339,9 +388,9 @@ Explore popular perfumes and find your perfect scent style.
 
 
 
-<section id="tips">
+<section id="skincare">
 
-<h2>Beauty Tips ✨</h2>
+<h2>🧴 Skincare Corner</h2>
 
 
 <div class="grid">
@@ -349,10 +398,10 @@ Explore popular perfumes and find your perfect scent style.
 
 <div class="card">
 
-<h3>☀️ Don't forget SPF</h3>
+<h3>Cleanser 🫧</h3>
 
 <p>
-Sun protection is an important part of many skincare routines.
+Removes dirt and helps your skin feel fresh.
 </p>
 
 </div>
@@ -360,10 +409,10 @@ Sun protection is an important part of many skincare routines.
 
 <div class="card">
 
-<h3>🌸 Patch test products</h3>
+<h3>Moisturiser 💧</h3>
 
 <p>
-Testing products first can help you understand how they work for your skin.
+Helps keep skin feeling hydrated and comfortable.
 </p>
 
 </div>
@@ -371,10 +420,21 @@ Testing products first can help you understand how they work for your skin.
 
 <div class="card">
 
-<h3>💗 Build a routine</h3>
+<h3>Serums ✨</h3>
 
 <p>
-Simple and consistent routines can make taking care of yourself easier.
+Skincare products made with ingredients designed for different skin goals.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>SPF ☀️</h3>
+
+<p>
+An important step in protecting skin from the sun.
 </p>
 
 </div>
@@ -388,7 +448,167 @@ Simple and consistent routines can make taking care of yourself easier.
 
 <section>
 
-<h2>Coming Soon 🚀</h2>
+<h2>🌷 Beauty Facts</h2>
+
+
+<div class="grid">
+
+
+<div class="card">
+
+<h3>Did you know? 💡</h3>
+
+<p>
+Different products work differently for different people, so finding favourites can take time.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Ingredient Spotlight 🧪</h3>
+
+<p>
+Hyaluronic acid is a popular skincare ingredient known for helping skin feel hydrated.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Beauty Routine Tip 🌸</h3>
+
+<p>
+A simple routine that you enjoy is often easier to stick with.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+<section id="tips">
+
+<h2>✨ Beauty Tips ✨</h2>
+
+
+<div class="grid">
+
+
+<div class="card">
+
+<h3>☀️ Remember SPF</h3>
+
+<p>
+Sun protection is an important part of many skincare routines.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🌸 Try Before You Buy</h3>
+
+<p>
+Learning about products and ingredients can help you find what suits your routine.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>💗 Keep It Simple</h3>
+
+<p>
+A simple routine with products you enjoy can be easier to maintain.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section id="about">
+
+<h2>💄 About ConnectBeauty</h2>
+
+<p style="text-align:center;font-size:18px;max-width:800px;margin:auto;">
+
+ConnectBeauty is a beauty discovery website made to help beauty lovers explore trending makeup, skincare and self-care products.
+
+<br><br>
+
+Our goal is to make finding beauty favourites easier by sharing product information, ratings, guides and tips.
+
+<br><br>
+
+Whether you love a natural look, a full glam style or a simple skincare routine, ConnectBeauty is here to help you discover new favourites!
+
+</p>
+
+</section>
+
+
+
+<section>
+
+<h2>🌟 Find Your Beauty Style</h2>
+
+
+<div class="grid">
+
+
+<div class="card">
+
+<h3>🌷 Natural Beauty</h3>
+
+<p>
+Soft makeup, fresh skin and simple everyday favourites.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>💎 Glam Lover</h3>
+
+<p>
+Bold makeup, glowing finishes and statement looks.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🧴 Skincare Lover</h3>
+
+<p>
+Self-care routines, hydration and healthy skin habits.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<h2>🚀 Coming Soon</h2>
 
 <p style="text-align:center;font-size:18px;">
 
@@ -400,7 +620,9 @@ Simple and consistent routines can make taking care of yourself easier.
 <br>
 ✨ Personal recommendations
 <br>
-✨ More beauty guides
+✨ More skincare guides
+<br>
+✨ Makeup inspiration
 
 </p>
 
@@ -411,6 +633,10 @@ Simple and consistent routines can make taking care of yourself easier.
 <footer>
 
 Made with 💗 by ConnectBeauty
+
+<br><br>
+
+✨ Discover. Explore. Glow. ✨
 
 </footer>
 
